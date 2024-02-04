@@ -1,34 +1,70 @@
-# React Assignment - fake Twitter
+# Getting Started with Create React App
 
-build a very simple Twitter-like web application.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## features
+## Available Scripts
 
-- [ ] register an account (store data in LocalStorage)
-- [ ] login
-- [ ] CRUD tweets
-- [ ] load more tweets via scroll down
-- [ ] switch theme
-- [ ] 1 column in iPhone screen size, 2 columns in iPad screen size
+In the project directory, you can run:
 
-## Details
+### `npm start`
 
-This is a Reactjs exercise that requires you to build a very simple Twitter-like web application. For simplicity, there is no backend involved in the application and the data should be stored on Redux. So, it doesn't matter if all the data is lost on closing/reloading of the webpage.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Task Details On homepage, the user has the option to either login or register. The registration form consists of the following fields:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Username (Should be unique to all users) First Name Password The login form consists of the following two fields:
+### `npm test`
 
-Username Password Store the password as plaintext ignoring the security concerns.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-After either successful registration or login, user is taken to his timeline page with URL path (/{username}). In the timeline page, user can post tweets (only text), and can see all the tweets along with their posting timestamp and the first name of their creators in descending order of their creation timestamp (newer tweets shown before older) posted by all users of the platform.
+### `npm run build`
 
-All tweets are publicly readable but they can be edited or deleted only by their owners (who posted them).
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Each tweet has a unique integer ID (similar to primary key) which is incremental. For example the first posted tweet has id 1, second has id 2 and third has id 3. ID of a tweet is never changed.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-On clicking on the tweets shown in the timeline page, user is taken to the corresponding tweet's dedicated page which is at URL path /tweet/{tweet ID}. User can see all the information related to the tweet here e.g. tweet id, tweet text, tweet posted time and first name of the poster.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-In the timeline page, there is a Logout button so that the user can logout and be taken to the homepage again, where he can register another account. But registering a new account (with a new Username) doesn't delete the tweets created by previous users if the session has not been destroyed.
+### `npm run eject`
 
-Bonus Point: Use bootstrap framework for designing the UI. Use only latest stable versions of all the libraries you use. Assessment You can create a github repo and push the code there and then share the repo url. Document how to run your code on our local machine. Clean readable code is preferred over a feature rich app.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
